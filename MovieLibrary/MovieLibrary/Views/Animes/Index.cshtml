@@ -1,27 +1,27 @@
 ﻿@model IEnumerable<MovieLibrary.Models.Anime>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Анимации";
 }
 
-<h2>Index</h2>
+<h2>Анимации</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Добави нов", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Title)
+            <strong>Заглавие</strong>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Genre)
+           <strong>Жанр</strong>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Season)
+            <strong>Сезон</strong>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Episode)
+            <strong>Епизод</strong>
         </th>
         <th></th>
     </tr>
@@ -41,9 +41,9 @@
             @Html.DisplayFor(modelItem => item.Episode)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @Html.ActionLink("Редактирай", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Детайли", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Изтрий", "Delete", new { id=item.Id })
         </td>
     </tr>
 }
