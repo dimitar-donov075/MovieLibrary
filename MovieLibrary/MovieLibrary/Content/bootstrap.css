@@ -51,6 +51,20 @@ audio:not([controls]) {
   display: none;
 }
 
+.content {
+    text-align: center;
+}
+
+.star {
+    background-image: url('../img/SEmpty.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    text-decoration: none;
+}
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;

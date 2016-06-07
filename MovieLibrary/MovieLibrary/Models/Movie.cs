@@ -11,6 +11,7 @@ namespace MovieLibrary.Models
         public string Title { get; set; }
         public string Genre { get; set; }
         public DateTime DateOfWatching { get; set; }
+        public string Rating { get; set; }
 
         public virtual ApplicationUser ApplicationUserId { get; set; }
 

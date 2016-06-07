@@ -12,7 +12,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>TvSeries</h4>
+        <h4>Сериали</h4>
         <hr />
         @Html.ValidationSummary(true)
         @Html.HiddenFor(model => model.Id)
@@ -54,6 +54,14 @@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Episode)
                 @Html.ValidationMessageFor(model => model.Episode)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Rating, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Rating)
+                @Html.ValidationMessageFor(model => model.Rating)
             </div>
         </div>
 

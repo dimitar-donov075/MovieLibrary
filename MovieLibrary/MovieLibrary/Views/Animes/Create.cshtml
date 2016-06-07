@@ -4,6 +4,8 @@
     ViewBag.Title = "Създай нов запис";
 }
 
+<script src="../Scripts/Rating.js"></script><script src="../Scripts/Rating.js"></script>
+
 <h2>Добави нов</h2>
 
 
@@ -45,6 +47,21 @@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Episode)
                 @Html.ValidationMessageFor(model => model.Episode)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Rating, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="scoreboard">
+                    <a class="star" id="1" href="#" onmouseover="Fill(1)" onmouseout="Empty(1)" onclick="Send(1)"></a>
+                    <a class="star" id="2" href="#" onmouseover="Fill(2)" onmouseout="Empty(2)" onclick="Send(2)"></a>
+                    <a class="star" id="3" href="#" onmouseover="Fill(3)" onmouseout="Empty(3)" onclick="Send(3)"></a>
+                    <a class="star" id="4" href="#" onmouseover="Fill(4)" onmouseout="Empty(4)" onclick="Send(4)"></a>
+                    <a class="star" id="5" href="#" onmouseover="Fill(5)" onmouseout="Empty(5)" onclick="Send(5)"></a>
+                    <input type="hidden" class="text-box single-line" id="Rating" name="Rating" type="text" value="">
+                    <span class="field-validation-valid" data-valmsg-for="Rating" data-valmsg-replace="true"></span>
+                </div>
             </div>
         </div>
 

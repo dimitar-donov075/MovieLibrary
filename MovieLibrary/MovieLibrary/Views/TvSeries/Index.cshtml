@@ -26,6 +26,9 @@
         <th>
             <strong>Епизод</strong>
         </th>
+        <th>
+            <strong>Рейтинг</strong>
+        </th>
         <th></th>
     </tr>
 
@@ -45,6 +48,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Episode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rating)
         </td>
         <td>
             @Html.ActionLink("Редактирай", "Edit", new { id=item.Id }) |

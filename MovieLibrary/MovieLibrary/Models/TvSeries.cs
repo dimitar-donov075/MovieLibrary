@@ -13,6 +13,7 @@ namespace MovieLibrary.Models
         public DateTime AirDate { get; set; }
         public Int16 Season { get; set; }
         public Int16 Episode { get; set; }
+        public string Rating { get; set; }
 
         public virtual ApplicationUser ApplicationUserId { get; set; }
     }

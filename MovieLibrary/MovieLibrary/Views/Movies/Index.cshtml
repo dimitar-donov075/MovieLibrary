@@ -20,6 +20,9 @@
         <th>
             <strong>Дата на гледане</strong>
         </th>
+        <th>
+            <strong>Рейтинг</strong>
+        </th>
         <th></th>
     </tr>
 
@@ -33,6 +36,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.DateOfWatching)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rating)
         </td>
         <td>
             @Html.ActionLink("Редактирай", "Edit", new { id=item.Id }) |
