@@ -2,30 +2,158 @@
     ViewBag.Title = "Начало";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-</div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"><img class="first-slide" src="data:img/26662720544_a8a8116dca_o.jpg" alt="First slide"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img class="first-slide" src="img/2.jpg" alt="First slide">
+
+        </div>
+        <div class="item">
+            <img class="second-slide" src="img/1.jpg" alt="Second slide">
+
+
+        </div>
+        <div class="item">
+            <img class="third-slide" src="img/3.jpg" alt="Third slide">
+
+
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div><!-- /.carousel -->
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+        <div class="col-lg-4">
+            <img class="img-circle" src="img/4.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Dirty Grandpa / Ох на дядо! 2016</h2>
+            <p>
+                Жанр- комедия<br />
+                Резюме-Точно преди сватбата си, Джейсън (Зак Ефрон) е подлъган да откара дядо си – бивш генерал – в слънчева Флорида, за да посрещне там “по мъжки” началото на пролетта...
+            </p>
+            <p><a class="btn btn-default" href="#pop-up" role="button">Виж детайли &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img class="img-circle" src="img/5.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Deadpool / Дедпул 2016</h2>
+            <p>
+                Жанр- екшън,фентъзи ,приключенски<br />
+                Резюме: Това е историята за произхода на бившия агент на Специални сили, превърнал се в наемник Уейд Уилсън, който след като е бил подложен на един измамен експеримент който ...
+            </p>
+            <p><a class="btn btn-default" href="#pop-up" role="button">Виж детайли &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img class="img-circle" src="img/6.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Bastille Day / Денят на Бастилията 2016</h2>
+            <p>
+                Жанр- екшън ,драма<br />
+                Резюме:Майкъл Мейсън живее в Париж и открадва чанта с плюшено мече в него, но не осъзнава, че играчката съдържа бомба и той я захвърля на оживена улица. Няколко секунди по-късно...
+            </p>
+            <p><a class="btn btn-default" href="#pop-up" role="button">Виж детайли &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+    <!--pop up-->
+    <div id="pop-up" class="overlay">
+
+        <div class="popup">
+            <h2>Детайли: </h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                Режисьор : Дан Мейзър
+                В ролите : Зак Ефрон, Джейсън Мантзукас, Адам Пали, Зоуи Дойч, Дермът Мълроуни, Обри Плаза, Джулиян Хоф, Робърт де Ниро, Мо Колинз 
+                IMDB- 6,0
+                Държава: САЩ
+                Времетраене : 112минути
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+
+    <div id="pop-up2" class="overlay">
+
+        <div class="popup">
+            <h2>кйфие.</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+            </div>
+        </div>
+        </div>
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Zootopia / Зоотрополис 2016 </h2>
+                <p class="lead">Жанр- екшън,анимация ,приключенски <br/>
+Резюме: В един град на антропоморфни животни, лисица-художник и зайче-ченге новобранец трябва да работят заедно, за да разкрият конспирация… <br/>
+Режисьор : Байрън Хауърд
+Сценарист: Джаред Буш
+Държава: САЩ <br/>
+Времетраене : 110минути
+</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive center-block" src="img/7.jpg" alt="Zootopia">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 col-md-push-5">
+                <h2 class="featurette-heading">The Jungle Book / Книга за джунглата 2016</h2>
+                <p class="lead">Жанр- драма ,приключенски , семеен <br/>
+Резюме: Режисьор Джон Фавро (Iron Man), Ръдиард Киплинг, вдъхновен от класическия анимационен филм на Дисни, The Jungle Book е едно изцяло ново епично приключение за Маугли (новодошъл Нийл Сети), момче-сирак, който е бил отгледан от семейство вълци…<br />
+Режисьор : Джон Фавро<br />
+В ролите: Нийл Сети<br />
+Държава: САЩ<br />
+Времетраене : 105минути</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+                <img class="featurette-image img-responsive center-block"src="img/8.jpg" alt="The Jungle  Book">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Teenage Mutant Ninja Turtles / Костенурките нинджа: на светло 2016</h2>
+                <p class="lead">Жанр: екшън,комедия ,приключенски <br/>
+Резюме: Костенурките нинджа се завръщат, за да спасят града от опасна заплаха. Микеланджело, Донатело, Леонардо и Рафаело се завръщат към кината това лято, за да се борят с по-големи злодеи… <br />
+Режисьор : Дейв Грийн<br />
+В ролите: Уилям Фичнер, Лора Лини,Уил Арнет, Мегън Фокс, Стивън Амел, Тайлър Пери, Алесандра Амброзио<br />
+Държава: САЩ<br />
+Времетраене : 112 минути</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive center-block" src="img/9.jpg" alt="Teenage Mutant Ninja Turtles">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
